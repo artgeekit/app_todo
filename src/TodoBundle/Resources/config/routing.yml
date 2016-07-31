@@ -1,3 +1,19 @@
-todo_homepage:
-    path:     /
-    defaults: { _controller: TodoBundle:Default:index }
+list_all:
+    path:     /listall
+    defaults: { _controller: TodoBundle:Todo:listAll }
+
+show:
+    path:     /show/{id}
+    defaults: { _controller: TodoBundle:Todo:show }
+
+create:
+    path:     /create
+    defaults: { _controller: TodoBundle:Todo:create }
+
+edit:
+    path:     /edit/{id}
+    defaults: { _controller: TodoBundle:Todo:edit }
+
+delete:
+    path:     /delete/{id}
+    defaults: { _controller: TodoBundle:Todo:delete }
