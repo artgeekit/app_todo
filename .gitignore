@@ -1,4 +1,5 @@
 .idea/
+.swp
 app/config/parameters.yml
 bin/
 !bin/console
