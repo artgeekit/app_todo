@@ -1,4 +1,5 @@
 .idea/
+.swp
 app/config/parameters.yml
 bin/
 !bin/console
@@ -9,3 +10,4 @@ var/
 !var/SymfonyRequirements.php
 vendor/
 web/bundles/
+app/bootstrap.php.cache
