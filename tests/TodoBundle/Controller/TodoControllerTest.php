@@ -6,6 +6,15 @@ use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 
 class TodoControllerTest extends WebTestCase
 {
+    public function testIndex()
+    {
+        $client = static::createClient();
+
+        $crawler = $client->request('GET', '/');
+
+        $this->assertTrue($client->getResponse()->isSuccessful());
+    }
+    
     public function testListAll()
     {
         $client = static::createClient();
@@ -20,8 +29,11 @@ class TodoControllerTest extends WebTestCase
         $client = static::createClient();
 
         $crawler = $client->request('GET', '/show/1');
-
         $this->assertTrue($client->getResponse()->isSuccessful());
+
+        $crawler = $client->request('GET', '/show/Alex#');
+        $this->assertTrue($client->getResponse()->isNotFound());
+        
     }
 
     public function testCreate()
