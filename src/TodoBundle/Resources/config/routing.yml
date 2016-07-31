@@ -1,3 +1,6 @@
+homepage:
+    path:     /
+    defaults: { _controller: TodoBundle:Todo:index }
 list_all:
     path:     /listall
     defaults: { _controller: TodoBundle:Todo:listAll }

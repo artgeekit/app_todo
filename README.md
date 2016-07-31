@@ -1,3 +1,3 @@
 TODO APPLICATION
 ========
-Author - Arthur Frank and Alex Bordo
+Author - Arthur Frank & Alex Bordo
