@@ -1,7 +1,6 @@
 homepage:
     path:     /
     defaults: { _controller: TodoBundle:Todo:index }
-
 list_all:
     path:     /listall
     defaults: { _controller: TodoBundle:Todo:listAll }
@@ -9,8 +8,6 @@ list_all:
 show:
     path:     /show/{id}
     defaults: { _controller: TodoBundle:Todo:show }
-    requirements:
-            id: '\d+'
 
 create:
     path:     /create
@@ -19,11 +16,7 @@ create:
 edit:
     path:     /edit/{id}
     defaults: { _controller: TodoBundle:Todo:edit }
-    requirements:
-            id: '\d+'
 
 delete:
     path:     /delete/{id}
     defaults: { _controller: TodoBundle:Todo:delete }
-    requirements:
-            id: '\d+'
